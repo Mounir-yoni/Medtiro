@@ -1,0 +1,39 @@
+@keyframes toptobottom {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+  }
+@keyframes lefttoright {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+  }
+@keyframes rotate360 {
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+        .displayback{
+            display: none;
+        }
+  }

@@ -1,0 +1,218 @@
+.working-title-h6{
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAASBAMAAABlZ9nIAAAAFVBMVEUAAABWWs9WWs9WWs9WWs9WWs9WWs/1NWIvAAAAB3RSTlMAJR0IGRQP8idXOgAAAEdJREFUCNdjYBB0YGBgFmRgYGASAhKMYkAiUIABIs4AFDcAEQoMQHEBIGQVYHBgYBQAihqCFCmCVSYwMLAKgjSDTDAUhogDALC/BAIr+ncLAAAAAElFTkSuQmCC');
+    background-position: 50%;
+    background-repeat: repeat;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 3px 15px;
+    color: var(--second-color);
+    margin: 15px auto ;
+}
+.working-title-h5{
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+
+
+
+
+.card-container-wrapper {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between cards */
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between cards */
+    padding: 20px;
+    background-color: #f0f4ff; /* Optional background color for wrapper */
+  }
+  
+  /* Card styling */
+  .custom-card {
+    flex: 1;
+    border-radius: 15px;
+    background-color: #f97316;
+    color: #fff;
+    width: 290px;
+    overflow: hidden;
+    text-align: center;
+    padding: 13px;
+    margin: 0; /* Reset default margin */
+    border: none;
+    transition: transform 0.3s ease; /* Add smooth zoom effect */
+    min-width: 250px; /* Minimum width for smaller screens */
+    z-index: 55;
+  }
+  
+  /* Card number styling */
+  .card-number {
+    font-size: 6rem;
+    font-weight: bold;
+    color: transparent;
+    position: relative;
+    -webkit-text-stroke: 2px #fff;
+    text-shadow: 0 10px 0 #f38f5e;
+  }
+  
+  /* Card title */
+  .card-title {
+    text-align: left;
+    margin-top: 20px;
+    font-size: auto;
+    font-weight: bold;
+  }
+  
+  /* Card text */
+  .card-text {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffff;
+    font-weight: 600;
+  }
+  
+  /* Button styling */
+  .view-more-button {
+    margin-top: 15px;
+    color: #f97316;
+    background-color: #E1E2F6;
+    border-radius: 10px;
+    padding: 15px 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .view-more-button:hover {
+    color: #E1E2F6;
+    background-color: #f97316;
+  }
+  
+  /* Arrow icon in the button */
+  .arrow-icon {
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .first-card,
+  .third-card {
+    background-color: #fff;
+    margin: 30px 20px 0px;
+  }
+  
+  .first-card .card-number,
+  .third-card .card-number {
+    -webkit-text-stroke: 2px #f38f5e;
+    text-shadow: 0 10px 0 #FFE3D3;
+  }
+  
+  .first-card .card-title,
+  .third-card .card-title,
+  .first-card .card-text,
+  .third-card .card-text {
+    color: #f38f5e;
+  }
+  
+  .first-card:hover {
+    animation: topdown 1s ease-in-out;
+  }
+  
+  .custom-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  /* Add animated background on hover using ::before */
+  .custom-card::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #f97316, #f97316);
+    z-index: 0;
+    transition: top 0.5s ease-in-out; /* Animate from bottom to top */
+  }
+  
+  .custom-card:hover::before {
+    top: 0;
+  }
+  
+  /* Ensure the card content is above the animation */
+  .custom-card > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .card-container-wrapper {
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center; /* Center align the cards */
+      gap: 15px;
+    }
+  
+    .custom-card {
+      width: 90%; /* Take up 90% of the width */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-number {
+      font-size: 4rem; /* Reduce font size for smaller screens */
+    }
+  
+    .view-more-button {
+      padding: 10px 20px; /* Adjust button size */
+      font-size: 14px;
+    }
+  }
+  
+
+
+  .pluse-image-working{
+    position: absolute;
+    top: 250px;
+    right: 90px;
+    animation: toptobottom 5s infinite ease;
+  }
+
+  .circle-image-working{
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    animation: toptobottom 5s infinite ease;
+  }
+  .circle-image-working2{
+    position: absolute;
+    top: 490px;
+    right: 220px;
+    z-index: 1;
+    animation: toptobottom 5s infinite ease;
+  }
+  .circle-image-working4{
+    position: absolute;
+    top: 400px;
+    right: 800px;
+    z-index: 1;
+    animation: lefttoright 5s infinite ease;
+  }
+
+  .circle-image-working3{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+

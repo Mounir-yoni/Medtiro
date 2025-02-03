@@ -1,0 +1,150 @@
+/* Footer Container */
+.footer {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    margin-top: 100px;
+    z-index: -1;
+    background: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Footer Sections */
+  .footer-section {
+    flex: 1 1 250px;
+    margin: 10px;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6c63ff;
+  }
+  
+  .footer-text {
+    color: #6c757d;
+    margin: 15px 0;
+  }
+  
+  .footer-contact {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .contact-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #ff6f36;
+  }
+  
+  .contact-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff6f36;
+  }
+  
+  .contact-number {
+    font-size: 18px;
+    color: var(--main-color);
+    font-weight: bold;
+  }
+  
+  /* Links */
+  .footer-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 15px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #6c757d;
+    cursor: pointer;
+  }
+  
+  .footer-links li:hover {
+    color: #6c63ff;
+  }
+  
+  /* Subscribe Section */
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .subscribe-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .subscribe-button {
+    background-color: #ff6f36;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #ff5722;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    font-size: 20px;
+    color: #6c63ff;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    color: #ff6f36;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .footer-section {
+      margin: 20px 0;
+    }
+  }
+  
+
+  .img-back3{
+    position: absolute;
+    width: 99%;
+    left: 0px;
+    top:-100px;
+  }
+  .img-back4{
+    position: absolute;
+    width: 98%;
+    top: -100px;
+    z-index: -1;
+  }

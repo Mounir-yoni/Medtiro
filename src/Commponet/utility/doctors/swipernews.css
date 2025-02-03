@@ -1,0 +1,160 @@
+.blog-carousel-news-doctor {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr)); /* Adjusted for better responsiveness */
+  gap: 30px; /* Reduced gap slightly for small screens */
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 1200px; /* Restrict maximum width */
+  margin: 0 auto; /* Center align */
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+
+.blog-card-news-doctor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 22rem !important;
+  z-index: 999;
+  border: 2px solid #e4e2e2;
+
+  
+}
+
+.blog-card-news-doctor:hover {
+  transform: translateY(-5px);
+  border: none;
+}
+
+.card-news-doctor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* Image Wrapper to create the decorative hexagonal/circle effect */
+.image-wrapper-doctor {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fa; /* Light background similar to doctor cards */
+  margin-top: 80px;
+
+}
+
+.image-wrapper-doctor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card-content-news-doctor {
+  margin-top: 130px;
+}
+
+.card-title-news-doctor {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.card-meta-news-doctor {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.read-more-news-doctor {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  background: #f7b977;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.read-more-news-doctor:hover {
+  background: #e69b5f;
+}
+
+.author-doctor{
+color: var(--second-color);
+font-size: 18px;
+font-weight: 500;
+
+}
+
+.icons-doctors{
+  font-size: 20px;
+  background-color: var(--third-color); 
+  margin: 0px 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  transition: .5s ease;
+}
+
+.icons-doctors:hover{
+  background-color: var(--second-color);
+}
+
+.frame1{
+  position: absolute;
+  top: 20px;
+  filter: grayscale(50%); /* Initially grayscale */
+  transition: all 0.5s ease;
+  opacity: 0.3;
+
+}
+.frame2{
+  position: absolute;
+  top: 35px;
+  filter: grayscale(50%); /* Initially grayscale */
+  transition: all 0.5s ease;
+  opacity: 0.3;
+}
+
+.blog-card-news-doctor:hover .frame1 ,.blog-card-news-doctor:hover .frame2{
+  filter: grayscale(0%); /* Remove grayscale on hover */
+  opacity: 1;
+}
+
+
+@media (max-width: 1200px) {
+  .blog-carousel-news-doctor {
+    grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Smaller cards on mobile */
+    gap: 20px;
+    padding: 20px; /* Reduce padding */
+  }
+}
+@media (max-width: 768px) {
+  .blog-carousel-news-doctor {
+    grid-template-columns: repeat(1, minmax(200px, 1fr)); /* Smaller cards on mobile */
+    gap: 20px;
+    padding: 20px; /* Reduce padding */
+  }
+}

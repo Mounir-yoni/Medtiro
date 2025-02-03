@@ -1,0 +1,412 @@
+.div-contact {
+    display: flex;
+    flex-direction: row;
+    height: auto; /* Adjust height for responsiveness */
+    max-width: 100%;
+    padding: 20px; /* Add padding for spacing */
+    gap: 20px; /* Add spacing between sections */
+}
+
+.div-contact-image {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* For proper image positioning */
+    order: 1;
+
+}
+
+.img-mobile {
+    position: absolute;
+    max-width: 90%;
+    max-height: 100%;
+    z-index: 1;
+}
+
+.img-woman {
+    position: relative;
+    max-width: 50%;
+    left: 185px;
+    top: 65px;
+    height: 75%;
+    z-index: 1;
+    animation: woman 5s infinite ease-in-out;
+}
+
+.div-contact-text {
+    width: 50%;
+    padding: 20px; /* Add padding for spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+    text-align: left; /* Align text to the left */
+    z-index: 60;
+
+}
+
+.div-contact-text h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.div-contact-text h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.div-contact-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+
+.contactus-form{
+    width: 60%;
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 1380px) {
+    .appointment-form {
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .appointment-form {
+        border-radius: 20px;
+        margin-left: 10px;
+        padding: 20px;
+    }
+
+    .appointment-form:after {
+        border-radius: 20px;
+        left: -10px;
+        top: -10px;
+    }
+    .appointment-form .form-control {
+        font-size: 14px;
+        height: 50px;
+        padding: 12px 18px;
+    }
+        .appointment-form .form-control {
+            font-size: 14px;
+            height: 50px;
+            padding: 12px 18px;
+        }
+    .contactus-form{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .appointment-form {
+        border-radius: 20px;
+        margin-left: 20px;
+        padding: 30px;
+    }
+    .appointment-form:after {
+        border-radius: 20px;
+        left: -15px;
+        top: -15px;
+    }
+    .appointment-form .title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+.appointment-form:after {
+    border: 2px solid #565acf;
+    border-radius: 40px;
+    content: "";
+    height: 100%;
+    left: -20px;
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+
+.appointment-form {
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 10px 60px 0 rgba(31, 34, 120, .1);
+    padding: 40px 35px;
+    position: relative;
+    text-align: center;
+}
+
+
+.appointment-form .title {
+    margin-bottom: 30px;
+    font-family: Montserrat, sans-serif;
+    line-height: 1.3;
+    color: #1f2278;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+.form-wraper .form-group {
+    margin-bottom: 20px;
+}
+.form-group {
+    position: relative;
+}
+
+.form-wraper .form-control {
+    border: 1px solid rgba(86, 90, 207, .3);
+    border-radius: 8px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    height: 60px;
+}
+
+
+.form-control {
+    background: #fff;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: #444;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 25px;
+    transition: all .3s ease-in-out;
+}
+
+
+.appointment-form button {
+    margin-top: 15px;
+}
+.btn-secondary {
+    background-color: #f17732;
+    color: #fff;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    font-size: 16px;
+    line-height: 1;
+    padding: 20px 35px;
+}
+
+.btn {
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 15px 30px;
+    text-decoration: none;
+    transition: all .5s;
+    border: none;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-font-size: 1.25rem;
+    --bs-btn-border-radius: var(--bs-border-radius-lg);
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    padding-block-start: 0px;
+    padding-block-end: 1px;
+    min-block-size: 1.2em;
+    padding-inline: 2px;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+.img-phone1{
+    position: absolute;
+    animation: toptobottom 8s infinite;
+    right: 254px;
+    z-index: 1;
+    top: 400px;
+    width: 100px;
+    z-index: 80;
+
+}
+.img-phone2{
+    position: absolute;
+    animation: toptobottom 3s infinite;
+    right: 600px;
+    z-index: 1;
+    top: 150px;
+    
+
+}
+.img-phone3{
+    position: absolute;
+    animation: toptobottom 3s infinite;
+    right: 503px;
+    z-index: 80;
+    top: 300px;
+    width: 100px;
+}
+.img-phone4{
+    position: absolute;
+    animation: toptobottom 3s infinite;
+    right: 103px;
+    z-index: 1;
+    top: 100px;
+    width: 100px;
+
+}
+.img-tran{
+    position: absolute;
+    animation: toptobottom 3s infinite;
+    left: 103px;
+    z-index: 1;
+    top: 0px;
+}
+.img-zigzag-contact{
+    position: absolute;
+    animation: lefttoright 4s infinite;
+    left: -73px;
+    z-index: 9999;
+    top:550px;
+}
+.img-back{
+    position: absolute;
+    left: 120px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .div-contact {
+        flex-direction: column; /* Stack sections vertically */
+        height: auto;
+        text-align: center; /* Center align text */
+        gap: 30px; /* Adjust gap for spacing */
+    }
+
+    .div-contact-image {
+        width: 100%; /* Full width for image container */
+        height: auto;
+        order: 2;
+    }
+
+    .img-mobile {
+        max-width: 70%;
+        left: 150px;
+        position: relative; /* Adjust for better positioning */
+    }
+
+    .img-woman {
+        max-width: 50%;
+        left: -130px;
+        top: 0;
+        height: 70% !important;
+    }
+
+    .div-contact-text {
+        width: 100%; /* Full width for text container */
+        padding: 10px;
+    }
+
+    .div-contact-text h5 {
+        font-size: 1.25rem; /* Adjust font size */
+    }
+
+    .div-contact-text h3 {
+        font-size: 1.75rem;
+    }
+
+    .div-contact-text p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img-mobile {
+        max-width: 60%; /* Further reduce image size */
+        left: 100px;
+    }
+
+    .img-woman {
+        max-width: 30%; /* Adjust woman's image size */
+        height: 60%;
+
+        left: -60px;
+    }
+
+    .div-contact-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .div-contact-text p {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .div-contact {
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .img-mobile {
+        max-width: 90%;
+        left: 80px;
+    }
+
+    .img-woman {
+        max-width: 50%;
+        left: -70px;
+        max-height: 500px !important;
+
+    }
+
+    .div-contact-text h3 {
+        font-size: 1.25rem;
+    }
+
+    .div-contact-text p {
+        font-size: 0.8rem;
+    }
+}
+
+
+@keyframes woman {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-30px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,67 @@
+/* General styles */
+
+  
+  .mySwiper {
+    padding: 20px 0;
+  }
+  
+  /* Testimonial card styles */
+  .testimonial-card {
+    background-color: #ff6f36;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+  }
+  
+  .quote-icon {
+    font-size: 40px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #ffffff;
+  }
+  
+  .quote-icon-bottom {
+    font-size: 40px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #ffffff;
+  }
+  
+  .testimonial-text {
+    margin: 30px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+  }
+  
+  .testimonial-author h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .testimonial-author p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (min-width: 990px) {
+    .div-clider1{
+      margin-left: 100px;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    .div-clider1{
+      width: 80% !important;
+    }
+  }

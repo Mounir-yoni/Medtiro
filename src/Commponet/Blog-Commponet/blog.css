@@ -1,0 +1,11 @@
+.blog-carousel-news{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr)); /* Adjusted for better responsiveness */
+    gap: 30px; /* Reduced gap slightly for small screens */
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 1200px; /* Restrict maximum width */
+    margin: 0 auto; /* Center align */
+    overflow: hidden; /* Prevent overflow issues */
+}
