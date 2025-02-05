@@ -16,11 +16,12 @@ import Register from './Pages/Login-Register/Register'
 import ServicePage from './Pages/service/ServicePage'
 import Blogepage from './Pages/Bloge/Blogepage'
 import Servicedetails from './Pages/serviceDetails/Servicedetails'
+import Blogedetpage from './Pages/Bloge/Blogedetpage'
 function App() {
 
   return (
     
-        <Servicedetails/>    
+        <Blogedetpage/>    
   )
 }
 
