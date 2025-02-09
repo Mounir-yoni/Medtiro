@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import './commponetblog.css'
-import RecentPosts from './Leftchat'
+import RecentPosts from './rightchat'
 
 export default function Rightsideblogdet() {
     console.log('hello')
