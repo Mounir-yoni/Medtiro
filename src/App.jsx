@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 
 import './App.css'
 import HomePage from './Pages/HomePage'
@@ -8,8 +7,6 @@ import Booking from './Pages/Booking/Booking'
 import Login from './Pages/Login-Register/Login'
 import Register from './Pages/Login-Register/Register'
 import Pagenotfound from './Pages/Pagenotfound/Pagenotfound'
-import HomeCommp from './Commponet/Home-Commponet/home/Home-Commp'
-import Aboutus from './Commponet/Home-Commponet/aboutus/Aboutus'
 import ServicePage from './Pages/service/ServicePage'
 import Servicedetails from './Pages/serviceDetails/Servicedetails'
 import Blogepage from './Pages/Bloge/Blogepage'
