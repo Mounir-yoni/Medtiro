@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import imagelogo from "../../image/Logo.png";
 import './register.css'; // Import the CSS file

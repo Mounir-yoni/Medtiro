@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import { Navbar } from 'react-bootstrap'
 import './home.css'
 import NavbarCommponet from '../Commponet/utility/navbar/NavbarCommponet'
 import HomeCommp from '../Commponet/Home-Commponet/home/Home-Commp'
@@ -24,7 +23,7 @@ export default function HomePage() {
       <Service/>
       <Testimonial/>
       <Lastnews/>
-      <Footer/>*/
+      <Footer/>
     </div>
   )
   

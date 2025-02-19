@@ -1,7 +1,4 @@
-/* eslint-disable no-const-assign */
-/* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
-// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';

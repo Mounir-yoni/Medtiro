@@ -2,7 +2,6 @@
 import React from "react";
 import "./Service.css";
 import SliderComponent from "../../utility/swiper";
-import Swiper from "swiper";
 import imageboxblue from '../../../image/boxbluedach.png'
 import imageboxorange from '../../../image/orangbox.png'
 import imagezigzag from '../../../image/zigzagblue.png'

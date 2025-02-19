@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import NavbarComponent from '../../Commponet/utility/navbar/NavbarCommponet'
-import HomeCommp from '../../Commponet/Home-Commponet/home/Home-Commp'
 import Pagehome from '../../Commponet/utility/componet-scr-page/startofpage/Pagehome'
 import Blogcomp from '../../Commponet/Blog-Commponet/Blogcomp'
 import Pagination from '../../Commponet/Blog-Commponet/pagination/Paginationblog'

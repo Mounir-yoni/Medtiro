@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable react/jsx-key */
 import React from 'react'
 import './blog.css'
 import image1 from '../../image/news1.jpg'
@@ -7,7 +6,6 @@ import image2 from '../../image/news2.jpg'
 import image3 from '../../image/news3.jpg'
 import image4 from '../../image/news4.jpg'
 import image5 from '../../image/news5.jpg'
-import Pagination from './pagination/Paginationblog'
 export default function Blogcomp() {
 
     const blogs = [
