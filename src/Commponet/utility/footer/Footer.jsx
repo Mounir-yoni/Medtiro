@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import './Footer.css'; // External CSS for styling
+import './footer.css'; // External CSS for styling
 import twiterimage from '../../../image/twiter.png'
 import facebook from '../../../image/facbook.png'
 import instagram from '../../../image/instgram.png'
