@@ -7,7 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logoimage from "../../../image/Logo.png";
 import "./utility.css";
-
+import { Link } from "react-router-dom";
 export default function NavbarComponent() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -72,10 +72,10 @@ export default function NavbarComponent() {
     <Navbar
       expand="lg"
       className={`custom-navbar ${scrolled ? "scrolled" : ""}`}
-      style={{ position: "fixed", top: "0", zIndex: "1000" }}
+      style={{ position: "fixed", top: "0", zIndex: "1000",width:"100%" }}
     >
       <Container style={{ maxWidth: "100%" }}>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img
             style={{ marginLeft: "50px" }}
             src={logoimage}
@@ -84,9 +84,9 @@ export default function NavbarComponent() {
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" style={{ backgroundColor: "#ffff" }}>
           <Nav className="me-auto">
-            <Nav.Link href="#home"
+            <Nav.Link href="/"
              >Home</Nav.Link>
             <NavDropdown
                         title="Pages"
@@ -101,14 +101,25 @@ export default function NavbarComponent() {
                         }}
                         id="basic-nav-dropdown"
                       >
-              <NavDropdown.Item href="#action/3.1" onMouseEnter={() => handleMouseEnter("pages")}
-              
-              >About Us</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Our Team</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">FAQ's</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Booking</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Error 404</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Login / Register</NavDropdown.Item>
+              <Link to={"/aboutas"} style={{width:"100%"}}>
+              About Us
+              </Link>
+              <Link to={"/team"}>
+               Our Team
+              </Link>
+              <Link to={"/faq"}>
+              FAQ's
+              </Link>
+              <Link to={"/booking"}>
+              Booking
+              </Link>
+              <Link to={"/pagenotfound"}>
+              Error 404
+              </Link>
+              <Link to={"/login"}>
+              Login / Register
+              </Link>
+
             </NavDropdown>
             <NavDropdown title="Service" id="basic-nav-dropdown"               
             onClick={() => {
@@ -118,8 +129,8 @@ export default function NavbarComponent() {
               }));
               }}  onMouseEnter={() => handleMouseEnter("service")}
               onMouseLeave={() => handleMouseLeave("service")} show={showDropdown.service}>
-              <NavDropdown.Item href="#action/3.1" onMouseEnter={() => handleMouseEnter("service")}>Service</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Service Details</NavDropdown.Item>
+              <Link  onMouseEnter={() => handleMouseEnter("service")} to="/service">Service</Link>
+              <Link to={"/serviceDetails"}>Service Details</Link>
             </NavDropdown>
             <NavDropdown title="Blog" id="basic-nav-dropdown"  onMouseEnter={() => handleMouseEnter("blog")}
               onMouseLeave={() => handleMouseLeave("blog")} show={showDropdown.blog}
@@ -132,8 +143,8 @@ export default function NavbarComponent() {
                 
               }}
               >
-              <NavDropdown.Item href="#action/3.1" onMouseEnter={() => handleMouseEnter("blog")}>Blogs</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Blog Details</NavDropdown.Item>
+                <Link to="/blog" onMouseEnter={() => handleMouseEnter("blog")}>Blogs</Link>
+              <Link to="/blogDetails">Blog Details</Link>
             </NavDropdown>
             <Nav.Link href="#contact">Contact Us</Nav.Link>
             <Nav.Link href="#search">

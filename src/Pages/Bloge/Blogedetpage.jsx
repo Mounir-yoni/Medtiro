@@ -3,6 +3,7 @@ import React from 'react'
 import NavbarComponent from '../../Commponet/utility/navbar/NavbarCommponet'
 import Pagehome from '../../Commponet/utility/componet-scr-page/startofpage/Pagehome'
 import Blogdet from '../../Commponet/Blog-Details-Commponet/Blogdet'
+import Footer from '../../Commponet/utility/footer/Footer'
 
 export default function Blogedetpage() {
   return (
@@ -10,6 +11,7 @@ export default function Blogedetpage() {
         <NavbarComponent/>
         <Pagehome pagedata={'Blog Details'}/>
         <Blogdet/>
+        <Footer/>
     </div>
   )
 }

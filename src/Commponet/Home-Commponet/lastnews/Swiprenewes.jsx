@@ -85,26 +85,25 @@ export default function BlogCarousel() {
 
 
   return (
-    <div className="blog-carousel-news" style={{backgroundColor:'#f9f9f9'}}>
+    <div className="carousel-news-section" style={{backgroundColor:'#ffff'}}>
     <Swiper
       slidesPerView={numberofcards}
       loop={true}
       spaceBetween={10}
-
-      className="swiper-container-news"
+      className="carousel-swiper-news"
     >
       {blogs.map((blog) => (
-        <SwiperSlide key={blog.id} className="blog-card-news">
-          <div className="card-news">
-            <img src={blog.image} alt={blog.title} className="card-image-news" />
-            <div className="card-content-news">
-              <div className="card-meta-news">
-                <span className="author">{blog.author}</span>
-                <span className="date">{blog.date}</span>
+        <SwiperSlide key={blog.id} className="carousel-slide-news">
+          <div className="news-card">
+            <img src={blog.image} alt={blog.title} className="news-card-image" />
+            <div className="news-card-content">
+              <div className="news-card-meta">
+                <span className="news-author">{blog.author}</span>
+                <span className="news-date">{blog.date}</span>
               </div>
-              <h3 className="card-title-news">{blog.title}</h3>
-              <button className="read-more-news">
-                Read More <span >&rarr;</span>
+              <h3 className="news-card-title">{blog.title}</h3>
+              <button className="news-read-more">
+                Read More <span>&rarr;</span>
               </button>
             </div>
           </div>
@@ -112,5 +111,6 @@ export default function BlogCarousel() {
       ))}
     </Swiper>
   </div>
+  
   );
 }

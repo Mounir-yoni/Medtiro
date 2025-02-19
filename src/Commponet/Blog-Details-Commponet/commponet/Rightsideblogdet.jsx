@@ -6,7 +6,7 @@ import RecentPosts from './rightchat'
 export default function Rightsideblogdet() {
     console.log('hello')
   return (
-    <div className='div-rightside-blog'>
+    <div className='div-rightside-blog ' style={{width:'100% !important'}}>
             <RecentPosts/>        
     </div>
   )

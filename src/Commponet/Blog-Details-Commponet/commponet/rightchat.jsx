@@ -52,7 +52,7 @@ const images = [
 
 export default function RecentPosts() {
   return (
-    <div className="" style={{width:'80%'}}>
+    <div className="div-right-chat" >
       {/* Search Bar */}
       <div className="search-box">
         <input type="text" placeholder="Enter your keywords..." />
@@ -95,7 +95,7 @@ export default function RecentPosts() {
     </div>
 
 
-    <div className=" tags-container">
+    <div className=" tags-container " style={{width:'100% !important'}}>
       {/* Title Section */}
       <h4>Tags</h4>
       <div className="underline"></div>

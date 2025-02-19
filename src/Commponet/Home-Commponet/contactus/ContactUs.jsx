@@ -14,7 +14,7 @@ import imagezigzag from '../../../image/zigzag.png'
 import Bookapp from '../../utility/BookApp/Bookapp'
 export default function ContactUs() {
   return (
-    <div className="mt-5 container d-flex mb-5  div-contact" style={{position: 'relative'}}>
+    <div className="mt-5 container d-flex mb-5  div-contact " style={{position: 'relative'}}>
     <div className="div-contact-image">
       <img src={mobileimage} className="img-mobile" alt="Mobile Illustration" />
       <img src={womanimage} className="img-woman" alt="Woman Illustration" />

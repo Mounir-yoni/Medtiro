@@ -66,7 +66,7 @@ export default function Servicecommponet() {
     });
 
     return (
-        <div className="container card-container-service">
+        <div className="card-container-service-wrapper">
             {dataflow}
         </div>
     );

@@ -1,126 +1,124 @@
-.blog-carousel-news {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    width: 100%;
-    max-width: 1000px; /* Restrict maximum width */
-    margin: 0 auto; /* Center align */
-    overflow: hidden; /* Prevent overflow issues */
-  }
-  
-  .swiper-container-news {
-    width: 100%;
-    height: auto; /* Allow height to adjust dynamically */
-  }
-  
-  .blog-card-news {
-    display: flex;
-    justify-content: center; /* Center-align each slide */
+.carousel-news-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 1000px; /* Restrict maximum width */
+  margin: 0 auto; /* Center align */
+  overflow: hidden; /* Prevent overflow issues */
+}
 
-  }
-  
-  .card-news {
-    background: #ffffff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 350px; /* Ensure consistent max width */
-    height: 100%; /* Full height */
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-  }
-  
-  .card-image-news {
-    width: 100%;
-    height: 200px;
-    object-fit: cover; /* Maintain aspect ratio */
-    border-radius: 10px;
-  }
-  
-  .card-content-news {
-    padding: 20px;
-  }
-  
-  .card-meta-news {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    color: #ff6f36;
-    margin-bottom: 10px;
-  }
-  
-  .card-title-news {
-    font-size: 18px;
-    color: #333333;
-    margin-bottom: 15px;
-    line-height: 1.4;
-  }
-  
-  .read-more-news {
-    font-size: 16px;
-    color: #6c63ff;
-    font-weight: bold;
-    border: solid 2.5px #6c63ff;
-    padding: 5px 15px;
-    border-radius: 10px;
-    font-weight: 500;
-    background: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    transition: all 0.3s ease;
-  }
-  
-  .read-more-news:hover {
-    background-color: #6c63ff;
-    color: #fff;
-  }
-  
-  .read-more-news span {
-    font-size: 20px;
-  }
-  
-  /* Responsive Styles */
-  
-  /* For screens between 991px and 1200px */
-  @media screen and (max-width: 1200px) {
-    .swiper-container-news {
+.carousel-swiper-news {
+  width: 100%;
+  height: auto; /* Allow height to adjust dynamically */
+}
+
+.carousel-slide-news {
+  display: flex;
+  justify-content: center; /* Center-align each slide */
+}
+
+.news-card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px; /* Ensure consistent max width */
+  height: 100%; /* Full height */
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.news-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+.news-card-content {
+  padding: 20px;
+}
+
+.news-card-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #ff6f36;
+  margin-bottom: 10px;
+}
+
+.news-card-title {
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.news-read-more {
+  font-size: 16px;
+  color: #6c63ff;
+  font-weight: bold;
+  border: solid 2.5px #6c63ff;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-weight: 500;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+}
+
+.news-read-more:hover {
+  background-color: #6c63ff;
+  color: #fff;
+}
+
+.news-read-more span {
+  font-size: 20px;
+}
+
+/* Responsive Styles */
+
+/* For screens between 991px and 1200px */
+@media screen and (max-width: 1200px) {
+  .carousel-swiper-news {
       padding: 0 10px;
-    }
-  
-    .card-news {
+  }
+
+  .news-card {
       max-width: 300px; /* Adjust card size */
-    }
   }
-  
-  /* For screens between 540px and 990px */
-  @media screen and (max-width: 990px) {
-    .blog-carousel-news {
+}
+
+/* For screens between 540px and 990px */
+@media screen and (max-width: 990px) {
+  .carousel-news-section {
       padding: 20px 10px;
-    }
-  
-    .card-news {
-      max-width: 280px; /* Adjust card size for medium screens */
-    }
   }
-  
-  /* For screens less than 540px */
-  @media screen and (max-width: 540px) {
-    .card-news {
+
+  .news-card {
+      max-width: 280px; /* Adjust card size for medium screens */
+  }
+}
+
+/* For screens less than 540px */
+@media screen and (max-width: 540px) {
+  .news-card {
       width: 100%; /* Full width for small screens */
       max-width: none; /* Remove max-width */
-    }
-  
-    .swiper-container-news {
-      height: auto; /* Allow dynamic height adjustment */
-    }
-    .blog-carousel-news{
-      max-width: 340px;
-    }
-    .title-lastnews-2{
-      width: 100%;
-    }
   }
-  
+
+  .carousel-swiper-news {
+      height: auto; /* Allow dynamic height adjustment */
+  }
+  .carousel-news-section {
+      max-width: 340px;
+  }
+  .title-lastnews-2 {
+      width: 100%;
+  }
+}

@@ -3,6 +3,7 @@
 import React from 'react';
 import imagelogo from "../../image/Logo.png";
 import './register.css'; // Import the CSS file
+import { Link } from 'react-router-dom';
 
 const RegisterForm = () => {
   return (
@@ -36,8 +37,10 @@ const RegisterForm = () => {
         </form>
 
 
-        <p>do you have any account?</p>
+        <p>do you have an account?</p>
+        <Link to="/login">
         <button className='btn-register'>login</button>
+        </Link>
       </div>
     </div>
   );

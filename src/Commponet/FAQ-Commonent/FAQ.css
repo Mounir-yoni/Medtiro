@@ -1,0 +1,38 @@
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 80px;
+  }
+  
+  .faq-item {
+    width: calc(50% - 5px); /* Two columns */
+    background-color: var(--third-color);
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: auto;
+  }
+  
+  .faq-question {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .faq-answer {
+    padding: 15px;
+    background-color: #5a55e8;
+    font-size: 0.9rem;
+  }
+  

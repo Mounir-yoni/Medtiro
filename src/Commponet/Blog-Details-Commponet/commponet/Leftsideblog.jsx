@@ -60,10 +60,10 @@ export default function Leftsideblog() {
 
       <div className="share-section">
         <strong>Share:</strong>
-        <a href="#" className="social-icon facebook"><FaFacebookF /></a>
-        <a href="#" className="social-icon instagram"><FaInstagram /></a>
-        <a href="#" className="social-icon linkedin"><FaLinkedinIn /></a>
-        <a href="#" className="social-icon twitter"><FaTwitter /></a>
+        <a href="#" className="social-icon-blogdet facebook"><FaFacebookF /></a>
+        <a href="#" className="social-icon-blogdet instagram"><FaInstagram /></a>
+        <a href="#" className="social-icon-blogdet linkedin"><FaLinkedinIn /></a>
+        <a href="#" className="social-icon-blogdet twitter"><FaTwitter /></a>
       </div>
 
     </div>
@@ -78,10 +78,10 @@ export default function Leftsideblog() {
           <h3>Sonar Z. Moyna</h3>
           <p>Aenean sollicitudin, lorem quis biber idum auctor anisi elit consequat happ quam vel enim augue.</p>
           <div className="social-icons">
-            <a href="#" className="social-icon"><FaFacebookF /></a>
-            <a href="#" className="social-icon"><FaInstagram /></a>
-            <a href="#" className="social-icon"><FaLinkedinIn /></a>
-            <a href="#" className="social-icon"><FaTwitter /></a>
+            <a href="#" className="social-icon-blogdet"><FaFacebookF /></a>
+            <a href="#" className="social-icon-blogdet"><FaInstagram /></a>
+            <a href="#" className="social-icon-blogdet"><FaLinkedinIn /></a>
+            <a href="#" className="social-icon-blogdet"><FaTwitter /></a>
           </div>
         </div>
       </div>

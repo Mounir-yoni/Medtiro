@@ -7,6 +7,7 @@
     align-items: center;
     top: 0;
     background-size: cover;
+    margin-bottom: 80px;
 }
 
 .pages-home-h4{
@@ -38,5 +39,12 @@
     left: 0;
     z-index: 1;
     rotate: 180deg;
+    
+}
+
+@media screen and (max-width: 575px) {
+    .pages-home-h4{
+        font-size: 40px;
+    }
     
 }

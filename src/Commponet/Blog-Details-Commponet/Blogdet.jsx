@@ -5,17 +5,14 @@ import Leftsideblog from './commponet/Leftsideblog'
 
 export default function Blogdet() {
   return (
-    <div className='container' style={{ position: 'relative', display: 'flex', flexDirection: 'row', width: '100%' }}>
-        <div  className='col-12 col-lg-8'>
-
-        <Leftsideblog/>
-        </div>
-
-        <div className='col-12 col-lg-4'>
-        <Rightsideblogdet/>
-
-        </div>
+<div className='container div-blog-det' >
+    <div className='col-12 col-lg-8 col-md-12 col-sm-12'>
+        <Leftsideblog />
     </div>
+    <div className='col-12 col-lg-4 col-md-12 col-sm-12'>
+        <Rightsideblogdet />
+    </div>
+</div>
 
   )
 }

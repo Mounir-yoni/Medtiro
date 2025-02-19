@@ -14,7 +14,8 @@ import Footer from '../Commponet/utility/footer/Footer'
 export default function HomePage() {
   
   return (
-    <div>
+    <div style={{width:'100%',overflow:'hidden'}}>
+      
       <NavbarCommponet/>
       <HomeCommp/>
       <Aboutus/>
@@ -23,7 +24,8 @@ export default function HomePage() {
       <Service/>
       <Testimonial/>
       <Lastnews/>
-      <Footer/>
+      <Footer/>*/
     </div>
   )
+  
 }

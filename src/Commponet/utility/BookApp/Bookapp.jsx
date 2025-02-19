@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Bookapp() {
   return (
-    <div className="col-xl-5 col-lg-6 col-md-6 contactus-form " > 
+    <div className=" contactus-form " > 
 
     <div className="appointment-form form-wraper " >
         <h3 className="title">Book Appointment</h3>

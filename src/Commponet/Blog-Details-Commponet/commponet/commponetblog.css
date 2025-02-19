@@ -1,4 +1,23 @@
 
+/* Default styles for larger screens */
+.container.div-blog-det {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-lg-8 {
+  width: 66.66%;
+}
+
+.col-lg-4 {
+  width: 33.33%;
+}
+
   
   /* Search Bar */
   .search-box {
@@ -102,7 +121,6 @@
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 500px;
     margin: auto;
     margin-top: 50px;
     border: #e4e2e2 2px solid;
@@ -135,6 +153,7 @@
     height: 100px;
     border-radius: 5px;
     object-fit: cover;
+    margin: 10px;
   }
   
 
@@ -162,7 +181,6 @@
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
-    max-width: 400px;
     margin: auto;
     border: #e4e2e2 2px solid;
     border-bottom: var(--third-color) 3px solid;
@@ -308,7 +326,7 @@
     gap: 10px;
   }
   
-  .social-icon {
+  .social-icon-blogdet {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -322,7 +340,7 @@
     transition: .4s;
   }
   
-  .social-icon:hover {
+  .social-icon-blogde:hover {
     background-color: var(--second-color);
     color: white;
 
@@ -379,19 +397,7 @@
     margin-top: 25px;
   }
   
-  .social-icon {
-    width: 40px;
-    height: 40px;
-    background: #5549d0;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    font-size: 18px;
-    text-decoration: none;
-    transition: .4s;
-  }
+
   
   .comments-title {
     font-size: 25px;
@@ -453,3 +459,51 @@
     background: #3b3bbf;
   }
   
+
+
+/* Medium screens (e.g., tablets) */
+@media (max-width: 992px) {
+  .col-md-12 {
+      width: 100%;
+  }
+  .container.div-blog-det {
+      flex-direction: column;
+  }
+
+  .div-right-chat{
+    width: 100% !;
+  }
+  .quote-container{
+    margin: auto;
+  }
+}
+
+/* Small screens (e.g., mobile phones) */
+@media (max-width: 768px) {
+  .col-sm-12 {
+      width: 100%;
+  margin-bottom: 20px; /* Add some spacing between stacked elements */
+  }
+
+  .container.div-blog-det {
+      flex-direction: column;
+  }
+  .gallery-container-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+  }
+  .gallery-container-div img{
+    width: 100% !important;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .div-leftside-blog-det{
+    width: 100% !important;
+    text-align: center;
+    margin: auto;
+  }
+}

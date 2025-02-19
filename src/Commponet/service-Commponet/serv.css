@@ -1,10 +1,21 @@
-.card-container-service{
+.card-container-service-wrapper{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
     gap: 30px;
     padding: 40px 20px;
     width: 100%;
     max-width: 1200px; /* Restrict maximum width */
     margin: 85px auto; /* Center align */
     overflow: hidden; /* Prevent overflow issues */
+}
+
+@media screen and (max-width: 720px) {
+    .card-container-service-wrapper{
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    .card-container-service-wrapper{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
 }

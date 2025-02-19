@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-key */
 import React from 'react'
 import './blog.css'
@@ -61,15 +62,15 @@ export default function Blogcomp() {
     <div className="blog-carousel-news" style={{backgroundColor:'#f9f9f9'}}>
 
       {blogs.map((blog) => (
-          <div className="card-news-blog-page" key={blog.id}>
-            <img src={blog.image} alt={blog.title} className="card-image-news" />
-            <div className="card-content-news">
-              <div className="card-meta-news">
-                <span className="author">{blog.author}</span>
-                <span className="date">{blog.date}</span>
+          <div className="news-card" key={blog.id}>
+            <img src={blog.image} alt={blog.title} className="news-card-image" />
+            <div className="news-card-content">
+              <div className="news-card-meta">
+                <span className="news-author">{blog.author}</span>
+                <span className="news-date">{blog.date}</span>
               </div>
-              <h3 className="card-title-news">{blog.title}</h3>
-              <button className="read-more-news">
+              <h3 className="news-card-title">{blog.title}</h3>
+              <button className="news-read-more">
                 Read More <span >&rarr;</span>
               </button>
             </div>

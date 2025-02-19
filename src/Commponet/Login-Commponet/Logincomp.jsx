@@ -3,7 +3,7 @@
 import React from 'react';
 import imagelogo from "../../image/Logo.png";
 import './login.css'; // Import the CSS file
-
+import { Link } from 'react-router-dom';
 const LoginForm = () => {
   return (
     <div className="login-container">
@@ -26,7 +26,9 @@ const LoginForm = () => {
           <a href="/forgot-password">Forgot Password?</a>
         </div>
         <p>Dont have any account?</p>
+        <Link to="/register">
         <button className='btn-register'>Register</button>
+        </Link>
       </div>
     </div>
   );

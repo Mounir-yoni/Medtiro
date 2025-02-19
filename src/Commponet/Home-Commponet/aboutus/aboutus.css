@@ -41,33 +41,12 @@
     width: 70%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .row-about-us {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 80%;
 }
-
-
-
-
 
 
 .feature-bx1 h4{
@@ -121,9 +100,6 @@
     animation: svganimationaboutus .7s ease-in-out  alternate;
 }
 
-
-
-
 @keyframes svganimationaboutus {
     0% {
         transform: translateX(5px);
@@ -163,10 +139,6 @@
         transform: translateX(5px);
     }
 }
-
-
-
-
 .btn-readmore-about-us
 {
     border-radius: 8px;
@@ -180,25 +152,6 @@
     color: #fff;
     font-size: 18px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .div-about-image {
     order: 1;
     width: 50%;
@@ -281,40 +234,6 @@
     transform: rotate(45deg);
     width: 60px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 1240px) {
     .img-doctor3 {
@@ -407,15 +326,6 @@
        display: none;
     }
 }
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 484px) {
     .div-about-image{
         width: 93%;
@@ -481,26 +391,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .img-about-background-box{
     position: absolute;
     animation: box 5s infinite ease-in-out;
@@ -517,9 +407,6 @@
     bottom: 10px;
     animation: box 5s infinite ease;
 }
-
-
-
 
 @keyframes box {
     0% {
