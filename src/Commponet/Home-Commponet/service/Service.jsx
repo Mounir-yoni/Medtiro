@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import "./Service.css";
+import "./service.css";
 import SliderComponent from "../../utility/swiper";
 import imageboxblue from '../../../image/boxbluedach.png'
 import imageboxorange from '../../../image/orangbox.png'
